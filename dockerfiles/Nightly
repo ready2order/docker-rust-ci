@@ -1,0 +1,5 @@
+FROM debian:testing
+
+COPY bin/build.sh /tmp/build.sh
+RUN TOOLCHAIN=nightly /tmp/build.sh
+ENV PATH=${PATH}:/root/.cargo/bin
