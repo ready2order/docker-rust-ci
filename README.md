@@ -3,10 +3,11 @@
 Dockerfile for a [Rust](https://rust-lang.org) Docker image intended for **CI 
 jobs**.
 
-In addition to rustc and cargo, the image contains 
-[rustfmt](https://github.com/rust-lang-nursery/rustfmt) and 
-[Clippy](https://github.com/rust-lang-nursery/rust-clippy), which are usually
-required for CI jobs but take a long time to build.
+In addition to rustc and cargo, the image contains multiple additional tools.
+
+* [rustfmt](https://github.com/rust-lang-nursery/rustfmt)
+* [Clippy](https://github.com/rust-lang-nursery/rust-clippy)
+* [cargo-make](https://github.com/sagiegurari/cargo-make)
 
 ## Tags
 
