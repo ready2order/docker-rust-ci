@@ -22,9 +22,9 @@ echo "Tagging nightly-$NIGHTLY..."
 docker tag ready2order/rust-ci:nightly ready2order/rust-ci:nightly-$NIGHTLY || exit 1
 
 echo "Publish nightly..."
-docker publish ready2order/rust-ci:nightly || exit 1
+docker push ready2order/rust-ci:nightly || exit 1
 
 echo "Publish nightly-$NIGHTLY..."
-docker publish ready2order/rust-ci:nightly-$NIGHTLY || exit 1
+docker push ready2order/rust-ci:nightly-$NIGHTLY || exit 1
 
 echo "Complete"
