@@ -20,7 +20,7 @@ cd /root
 
 # Instal rustup and rust.
 apt-get update &&
-apt-get install -y curl build-essential git &&
+apt-get install -y curl build-essential git openssl libssl-dev &&
 curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain $TOOLCHAIN &&
 source ./.profile &&
 
