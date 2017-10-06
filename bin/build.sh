@@ -18,9 +18,11 @@ esac
 
 cd /root
 
+PACKAGES="curl build-essential git openssl libssl-dev pkg-config"
+
 # Instal rustup and rust.
 apt-get update &&
-apt-get install -y curl build-essential git openssl libssl-dev &&
+apt-get install -y $PACKAGES &&
 curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain $TOOLCHAIN &&
 source ./.profile &&
 
