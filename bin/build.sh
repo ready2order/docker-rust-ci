@@ -43,3 +43,8 @@ source ./.profile &&
 cargo install cargo-make
 rustup run nightly cargo install rustfmt-nightly &&
 rustup run nightly cargo install clippy
+
+# Clean apt caches.
+apt-get clean -y
+
+
