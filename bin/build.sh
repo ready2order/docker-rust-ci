@@ -18,7 +18,20 @@ esac
 
 cd /root
 
-PACKAGES="curl build-essential git openssl libssl-dev pkg-config libssh2-1 libssh2-1-dev"
+PACKAGES="curl \
+build-essential \
+git \
+openssl \
+libssl-dev \
+pkg-config \
+libssh2-1 \
+libssh2-1-dev \
+cmake \
+libsqlite3-dev \
+libgit2-dev \
+"
+
+echo $PACKAGES
 
 # Instal rustup and rust.
 apt-get update &&
